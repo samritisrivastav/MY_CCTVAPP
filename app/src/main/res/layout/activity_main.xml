@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bluish"
+
+
+
+    tools:context="com.example.toshiba.cctvapp.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/alertcam_Linear"
+        >
+
+
+    <TextView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:text="Alert Camera"
+        android:layout_marginTop="50dp"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:background="@drawable/circle"
+        android:textColor="#fff"
+        android:gravity="center"
+        android:id="@+id/text_view_alertcam"
+         />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/alertcam_Linear"
+        android:background="@drawable/shape"
+        android:layout_marginTop="20dp"
+        android:id="@+id/username_id"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+
+
+        >
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:backgroundTint="#08c8d6"
+        android:background="@drawable/user1"
+        android:padding="30dp"
+        android:layout_marginLeft="10dp"/>
+
+        <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Username"
+        android:textStyle="bold"
+            android:textSize="20dp"
+        android:textColor="#066ba1"
+        android:layout_marginLeft="10dp"
+        android:textColorHint="#08c8d6"
+        android:paddingLeft="10dp"
+        android:background="@null"
+        android:id="@+id/user_id" ></EditText>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/username_id"
+        android:background="@drawable/shape"
+        android:layout_marginTop="20dp"
+        android:id="@+id/password_id"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:backgroundTint="#08c8d6"
+            android:background="@drawable/key"
+            android:padding="30dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/imageView" />
+
+        <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Password"
+        android:textStyle="bold"
+            android:textSize="20dp"
+        android:textColor="#066ba1"
+        android:layout_marginLeft="10dp"
+        android:textColorHint="#08c8d6"
+        android:paddingLeft="10dp"
+        android:background="@null"
+        android:id="@+id/pass_id" >
+
+    </EditText>
+</LinearLayout>
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/password_id"
+        android:id="@+id/RadioGroup_id"
+        android:layout_margin="20dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:weightSum="2"
+
+        >
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="UserLogin"
+        android:textColor="#efc470"
+        android:textStyle="bold|italic"
+        android:textSize="25dp"
+        android:layout_weight="1"
+        android:id="@+id/radio_user_login"
+        android:buttonTint="#fff"
+        />
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AdminLogin"
+        android:buttonTint="#fff"
+        android:id="@+id/radio_admin_login"
+        android:textColor="#efc470"
+        android:textSize="25dp"
+        android:textStyle="bold|italic"
+        />
+    </RadioGroup>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/shape"
+        android:layout_below="@id/RadioGroup_id"
+        android:layout_marginTop="10dp"
+        android:textColor="#08c8d6"
+        android:text="LOGIN"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:id="@+id/login_button"
+        android:onClick="Login"></Button>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/shape"
+        android:layout_below="@id/login_button"
+        android:layout_marginTop="10dp"
+        android:textColor="#08c8d6"
+        android:text="Sign up"
+
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:id="@+id/signup_button"
+        android:onClick="signup"></Button>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forget Password"
+        android:textColor="#fff"
+        android:onClick="Signup"
+        android:textSize="20dp"
+        android:layout_below="@id/signup_button"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"/>
+</RelativeLayout>

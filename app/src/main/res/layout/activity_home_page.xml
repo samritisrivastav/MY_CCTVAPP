@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_home_page"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ecb750"
+    tools:context="com.example.toshiba.cctvapp.Home_page">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp">
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/house"
+            android:id="@+id/home_id"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HOME"
+            android:layout_below="@+id/home_id"
+            android:layout_centerHorizontal="true"
+            android:textStyle="italic|bold"
+            android:textSize="25dp"
+            android:textColor="#fcfbfb"
+            android:layout_marginTop="5dp"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
+            android:id="@+id/Live_relative_id"
+            android:layout_below="@+id/home_id">
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:src="@drawable/cctv"/>
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:layout_marginLeft="50dp"
+                android:layout_centerVertical="true"
+                android:text="Live Preview"
+                android:textSize="20dp"
+                android:id="@+id/Livepreview_id"
+                />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/forward"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:id="@+id/live_image_id"
+
+                android:layout_marginRight="5dp"
+                android:onClick="live"
+                android:clickable="true"/>
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="#bcffffff"
+            android:id="@+id/view1"
+            android:layout_below="@id/Live_relative_id"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="24dp"
+            android:id="@+id/Device_relative_id"
+            android:layout_below="@+id/Live_relative_id">
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:src="@drawable/devicelist"/>
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:text="Device List"
+                android:textSize="20dp"
+                android:layout_marginLeft="50dp"
+                android:layout_centerVertical="true"
+                android:id="@+id/DeviceList_id"
+                />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/forward"
+                android:layout_alignParentRight="true"
+                android:onClick="device"
+                android:id="@+id/device_image_id"
+                android:clickable="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"/>
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:id="@+id/view2"
+            android:background="#bcffffff"
+            android:layout_below="@id/Device_relative_id"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="24dp"
+            android:id="@+id/saved_relative_id"
+            android:layout_below="@+id/Device_relative_id">
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:src="@drawable/save"/>
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:text="Saved Photos and Videos"
+                android:textSize="20dp"
+                android:layout_marginLeft="50dp"
+                android:layout_centerVertical="true"
+                android:id="@+id/saved_text_id"
+                />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/forward"
+                android:layout_alignParentRight="true"
+                android:onClick="save"
+                android:clickable="true"
+                android:id="@+id/save_image_id"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"/>
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="#bcffffff"
+            android:layout_below="@id/saved_relative_id"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="25dp"
+            android:id="@+id/RemotePlayback_relative_id"
+            android:layout_below="@id/saved_relative_id"
+            >
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:src="@drawable/remotecontrol"
+                android:id="@+id/imageView" />
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:text="Remote Playback"
+                android:textSize="20dp"
+                android:layout_marginLeft="50dp"
+                android:layout_centerVertical="true"
+                android:id="@+id/remoteplayback_text_id"
+                />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/forward"
+                android:id="@+id/remote_image_id"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:onClick="remote"
+                android:clickable="true"/>
+
+
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="#bcffffff"
+            android:layout_below="@id/RemotePlayback_relative_id"
+            />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="25dp"
+            android:id="@+id/Alarm_relative_id"
+            android:layout_below="@id/RemotePlayback_relative_id"
+            >
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:src="@drawable/alarm"
+                />
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:text="Alarm"
+                android:textSize="20dp"
+                android:layout_marginLeft="50dp"
+                android:layout_centerVertical="true"
+                android:id="@+id/alarm_text_id"
+                />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/forward"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:id="@+id/alarm_image_id"
+                android:onClick="alarm"
+                android:clickable="true"
+                />
+
+
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="#bcffffff"
+            android:layout_below="@id/Alarm_relative_id"
+            />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="25dp"
+            android:id="@+id/configuration_relative_id"
+            android:layout_below="@id/Alarm_relative_id"
+            >
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:src="@drawable/settings"
+                />
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:text="Configuration"
+                android:textSize="20dp"
+                android:layout_marginLeft="50dp"
+                android:layout_centerVertical="true"
+                android:id="@+id/config_text_id"
+                />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/forward"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:onClick="config"
+                android:id="@+id/config_image_id"
+                android:clickable="true"/>
+
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="#bcffffff"
+            android:layout_below="@id/configuration_relative_id"
+            />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="25dp"
+            android:id="@+id/About_relative_id"
+            android:layout_below="@id/configuration_relative_id"
+            >
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/aboutpic"
+                />
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:text="About Device"
+                android:textSize="20dp"
+                android:layout_marginLeft="50dp"
+                android:layout_centerVertical="true"
+                android:id="@+id/about_text_id"
+                />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/forward"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:onClick="about"
+                android:id="@+id/aboutdevice_image_id"
+                android:clickable="true"/>
+
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="#bcffffff"
+
+            android:layout_below="@id/configuration_relative_id"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

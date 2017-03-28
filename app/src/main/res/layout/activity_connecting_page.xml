@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_connecting_page"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_homepage"
+    android:padding="20dp"
+    tools:context="com.example.toshiba.cctvapp.connecting_page">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="ALERT CAMERA"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:id="@+id/alertcam_id"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_below="@+id/alertcam_id"
+        android:text="IP ADDRESS"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:layout_margin="20dp"
+        android:textSize="20dp"
+        android:id="@+id/ip_address_id"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_below="@+id/ip_edit_text_id"
+        android:text="PORT"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:layout_margin="20dp"
+        android:textSize="20dp"
+        android:id="@+id/port_id"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/port_edit_text"
+        android:layout_below="@id/port_id"
+        android:layout_marginLeft="10dp"
+        android:textColorHint="#1892cf"
+        android:paddingLeft="10dp"
+        android:background="@drawable/shape"
+
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape"
+        android:layout_below="@id/port_edit_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="START SCAN"
+        android:textSize="15dp"
+        android:onClick="startscan"
+        android:padding="20dp"
+        android:textColor="#22d4e4"
+        android:id="@+id/start_scanid"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:paddingLeft="10dp"
+        android:id="@+id/ip_edit_text_id"
+        android:textColorHint="#1892cf"
+        android:background="@drawable/shape"
+
+        android:layout_below="@+id/ip_address_id"
+        android:layout_alignLeft="@+id/port_edit_text"
+        android:layout_alignStart="@+id/port_edit_text" />
+
+</RelativeLayout>

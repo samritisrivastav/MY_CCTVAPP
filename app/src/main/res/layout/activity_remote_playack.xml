@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_remote_playack"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.toshiba.cctvapp.Remote_playack">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/imageback"
+        android:scaleType="centerCrop"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="REMOTE PLAYBACK"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:textColor="#fff"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/remote_TextView"
+        android:layout_marginTop="20dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mannual Search"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textColor="#faa701"
+        android:padding="10dp"
+        android:id="@+id/textView"
+        android:layout_below="@+id/remote_TextView"
+       ></TextView>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:padding="20dp"
+        android:layout_margin="10dp"
+        android:textColorHint="#1892cf"
+        android:background="@drawable/shape"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/mannual_editText" />
+    <EditText
+        android:layout_width="90dp"
+        android:layout_height="50dp"
+        android:hint="Date"
+        android:gravity="center"
+        android:layout_margin="20dp"
+        android:textColorHint="#0ee8f4"
+        android:layout_below="@id/mannual_editText"
+        android:background="@drawable/shape"
+        android:id="@+id/button_tym1"
+        />
+<EditText
+    android:layout_width="90dp"
+    android:layout_height="50dp"
+    android:hint="Time"
+    android:gravity="center"
+    android:textColorHighlight="#0ee8f4"
+    android:layout_toRightOf="@id/button_tym1"
+    android:layout_below="@id/mannual_editText"
+    android:layout_margin="20dp"
+    android:background="@drawable/shape"
+    />
+
+</RelativeLayout>
+</RelativeLayout>
